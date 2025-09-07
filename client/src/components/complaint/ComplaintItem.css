@@ -1,0 +1,63 @@
+.complaint-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s ease;
+}
+
+.complaint-item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.complaint-title {
+    margin: 0 0 0.25rem 0;
+    color: #333;
+}
+
+.complaint-meta {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.status-badge {
+    padding: 0.3rem 0.8rem;
+    border-radius: 12px;
+    color: white;
+    font-weight: bold;
+    font-size: 0.8rem;
+    text-transform: capitalize;
+}
+
+/* Status Colors */
+.status-new { background-color: #3498db; }
+.status-in-progress { background-color: #f1c40f; }
+.status-resolved { background-color: #2ecc71; }
+.status-closed { background-color: #95a5a6; }
+
+.complaint-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+    cursor: pointer; /* ADD THIS LINE */
+}
+
+.complaint-item:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px); /* ADD THIS LINE for a nice hover effect */
+}
+
+/* ... rest of the CSS remains the same ... */
